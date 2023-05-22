@@ -1,0 +1,21 @@
+<footer>
+    <nav class="nav-footer">
+        <?php
+            $args = [
+              "menu" => "principal",
+              "container" => false,
+            ];
+            wp_nav_menu($args);
+            ?>
+    </nav>
+
+    <p><?php bloginfo("name"); ?> © <?php echo date(
+   "Y"
+ ); ?>. Alguns direitos reservados.</p>
+</footer>
+<!-- Footer WordPress -->
+<?php wp_footer(); ?>
+<!-- Fecha Footer WordPress -->
+</body>
+
+</html>
